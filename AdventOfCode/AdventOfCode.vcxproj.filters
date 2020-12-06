@@ -39,6 +39,18 @@
     <ClCompile Include="src\Tasks\Task22.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="src\Tasks\Task31.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\Task32.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\Task41.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="src\Tasks\Task42.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="src\Task.h">
@@ -62,9 +74,25 @@
     <ClInclude Include="src\Tasks\Task22.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="src\Tasks\Task31.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Task32.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Task41.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="src\Tasks\Task42.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="res\2.in" />
     <None Include="res\1.in" />
+    <None Include="res\4.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\3.in" />
   </ItemGroup>
 </Project>

@@ -4,7 +4,7 @@ namespace AOC
 {
     std::string Task21::solution()
     {
-        const auto l = readWithCustomReader(CustomReaders::Task2Reader);
+        const auto l = readWithCustomReader(CustomReaders::task2Reader);
 
         int overallCount = 0;
 

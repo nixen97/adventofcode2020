@@ -6,6 +6,7 @@
 #include <vector>
 #include <algorithm>
 #include <unordered_map>
+#include <array>
 
 #include "CustomReaders.h"
 
@@ -35,14 +36,14 @@ namespace AOC
 
     protected:
         template<typename T>
-        T readWithCustomReader(T(*f)(std::string));
+        T readWithCustomReader(T(*f)(const std::string&));
 
         template<typename T>
         std::pair<std::shared_ptr<std::vector<T>>, size_t> readInput();
     };
 
     template <typename T>
-    T Task::readWithCustomReader(T(* f)(std::string))
+    T Task::readWithCustomReader(T(* f)(const std::string&))
     {
         return f(m_InputPath);
     }

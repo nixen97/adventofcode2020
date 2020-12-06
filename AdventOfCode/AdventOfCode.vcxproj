@@ -150,6 +150,10 @@
     <ClCompile Include="src\Tasks\Task11.cpp" />
     <ClCompile Include="src\Tasks\Task21.cpp" />
     <ClCompile Include="src\Tasks\Task22.cpp" />
+    <ClCompile Include="src\Tasks\Task31.cpp" />
+    <ClCompile Include="src\Tasks\Task32.cpp" />
+    <ClCompile Include="src\Tasks\Task41.cpp" />
+    <ClCompile Include="src\Tasks\Task42.cpp" />
     <ClCompile Include="src\Tasks\TestTask.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -159,11 +163,19 @@
     <ClInclude Include="src\Tasks\Task11.h" />
     <ClInclude Include="src\Tasks\Task21.h" />
     <ClInclude Include="src\Tasks\Task22.h" />
+    <ClInclude Include="src\Tasks\Task31.h" />
+    <ClInclude Include="src\Tasks\Task32.h" />
+    <ClInclude Include="src\Tasks\Task41.h" />
+    <ClInclude Include="src\Tasks\Task42.h" />
     <ClInclude Include="src\Tasks\TestTask.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="res\1.in" />
     <None Include="res\2.in" />
+    <None Include="res\4.in" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="res\3.in" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
