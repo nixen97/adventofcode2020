@@ -40,12 +40,23 @@ namespace AOC
         static Task4DataField getFieldFromStringIdent(const std::string& ident);
     };
 
+    struct Task6Data
+    {
+        uint32_t map : 26;
+        uint8_t count = 0;
+
+        Task6Data()
+            : map(0) { }
+    };
+
     class CustomReaders
     {
     public:
         static std::shared_ptr<std::vector<std::tuple<int, int, char, std::string>>> task2Reader(const std::string& path);
         static std::shared_ptr<std::tuple<std::vector<std::vector<char>>, size_t, size_t>> task3Reader(const std::string &path);
         static std::shared_ptr<std::vector<Task4Data>> task4Reader(const std::string& path);
+        static std::shared_ptr<std::vector<int>> task5Reader(const std::string& path);
+        static std::shared_ptr<std::vector<Task6Data>> task6Reader(const std::string& path);
 
     private:
         static void parseField(const std::string& temp, Task4Data& data);

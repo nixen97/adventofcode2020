@@ -154,6 +154,9 @@
     <ClCompile Include="src\Tasks\Task32.cpp" />
     <ClCompile Include="src\Tasks\Task41.cpp" />
     <ClCompile Include="src\Tasks\Task42.cpp" />
+    <ClCompile Include="src\Tasks\Task51.cpp" />
+    <ClCompile Include="src\Tasks\Task52.cpp" />
+    <ClCompile Include="src\Tasks\Task61.cpp" />
     <ClCompile Include="src\Tasks\TestTask.cpp" />
   </ItemGroup>
   <ItemGroup>
@@ -167,12 +170,17 @@
     <ClInclude Include="src\Tasks\Task32.h" />
     <ClInclude Include="src\Tasks\Task41.h" />
     <ClInclude Include="src\Tasks\Task42.h" />
+    <ClInclude Include="src\Tasks\Task51.h" />
+    <ClInclude Include="src\Tasks\Task52.h" />
+    <ClInclude Include="src\Tasks\Task61.h" />
     <ClInclude Include="src\Tasks\TestTask.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="res\1.in" />
     <None Include="res\2.in" />
     <None Include="res\4.in" />
+    <None Include="res\5.in" />
+    <None Include="res\6.in" />
   </ItemGroup>
   <ItemGroup>
     <Text Include="res\3.in" />

@@ -10,6 +10,9 @@
 #include "Tasks/Task32.h"
 #include "Tasks/Task41.h"
 #include "Tasks/Task42.h"
+#include "Tasks/Task51.h"
+#include "Tasks/Task52.h"
+#include "Tasks/Task61.h"
 
 using namespace AOC;
 
@@ -19,7 +22,9 @@ int main(int argc, char* argv)
         { "task1", "res/1.in" },
         { "task2", "res/2.in" },
         { "task3", "res/3.in" },
-        { "task4", "res/4.in" }
+        { "task4", "res/4.in" },
+        { "task5", "res/5.in" },
+        { "task6", "res/6.in" }
     };
 
     std::vector<Task*> tasks = {
@@ -30,7 +35,10 @@ int main(int argc, char* argv)
         new Task31(inputs["task3"]),
         new Task32(inputs["task3"]),
         new Task41(inputs["task4"]),
-        new Task42(inputs["task4"])
+        new Task42(inputs["task4"]),
+        new Task51(inputs["task5"]),
+        new Task52(inputs["task5"]),
+        new Task61(inputs["task6"])
     };
 
     for (Task* task : tasks)

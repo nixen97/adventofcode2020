@@ -189,4 +189,83 @@ namespace AOC
 
         return out;
     }
+
+    std::shared_ptr<std::vector<int>> CustomReaders::task5Reader(const std::string& path)
+    {
+        std::ifstream fStream;
+
+        fStream.open(path);
+
+        if (!fStream.is_open())
+            return nullptr;
+
+        std::string input;
+        auto out = std::make_shared<std::vector<int>>();
+
+        while (!fStream.eof())
+        {
+            int row = 0;
+            int col = 0;
+
+
+            fStream >> input;
+
+            if (input.size() != 10)
+                exit(1);
+
+            for (int i = 0; i < 7; i++)
+                row |= input[i] == 'F' ? 0 : 1 << (6 - i);
+
+            for (int i = 0; i < 3; i++)
+                col |= input[i + 7] == 'L' ? 0 : 1 << (2 - i);
+
+            out->push_back(row * 8 + col);
+        }
+
+        return out;
+    }
+
+    
+
+    std::shared_ptr<std::vector<Task6Data>> CustomReaders::task6Reader(const std::string& path)
+    {
+        std::ifstream fStream;
+
+        fStream.open(path);
+
+        if (!fStream.is_open())
+            return nullptr;
+
+        auto out = std::make_shared<std::vector<Task6Data>>();
+        std::string line;
+        const int OFFSET = 97;
+
+        while (!fStream.eof())
+        {
+            Task6Data data;
+
+            std::getline(fStream, line);
+
+            while (!line.empty())
+            {
+                for (char c : line)
+                {
+                    data.map |= 1 << (c - OFFSET);
+                }
+                std::getline(fStream, line);
+            }
+
+            // Count with Brian Kernighan
+            uint32_t mapCopy = data.map;
+            while (mapCopy)
+            {
+                mapCopy &= (mapCopy - 1);
+                data.count++;
+            }
+
+            out->push_back(data);
+        }
+
+        return out;
+    }
 }
